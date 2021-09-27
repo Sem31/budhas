@@ -1,0 +1,297 @@
+/*-----------------------------
+    CUSTOM
+-----------------------------*/
+
+div[data-section="wrap"] {
+	width: 767px;
+}
+
+a:hover {
+	color: #1953f7;
+}
+
+div[data-editable="text"] ul,
+div[data-editable="text"] ol {
+	padding-left: 35px;
+}
+
+div[data-editable="text"] ul {
+	list-style-image: url(../img/25.png);
+}
+
+div[data-editable="text"] ul li,
+div[data-editable="text"] ol li {
+	margin: 6px 0;
+}
+
+
+/* [ Base text ] */
+
+div.text-content,
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] input[type="email"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] input[type="email"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webformNew"] .directional,
+div[data-editable="webinarNew"] label,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] input[type="email"],
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select,
+div[data-editable="webinarNew"] .directional {
+	font-size: 21px;
+	font-family: 'Glegoo', serif;
+	color: rgb(70, 70, 70);
+	line-height: 1.2;
+}
+
+
+/* [ Webform text ] */
+
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] input[type="email"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] input[type="email"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webformNew"] .directional,
+div[data-editable="webinarNew"] label,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] input[type="email"],
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select,
+div[data-editable="webinarNew"] .directional {
+	font-size: 27px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgb(48, 48, 48);
+}
+
+
+/* [ Webform inputs ] */
+
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] input[type="email"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] input[type="email"],
+div[data-editable="webformNew"] [data-item-what="phone"] .fix-table-bug,
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] input[type="email"],
+div[data-editable="webinarNew"] [data-item-what="phone"] .fix-table-bug,
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select {
+	border-radius: 14px;
+	border: 3px solid rgb(255, 181, 2);
+	background-color: rgb(255, 255, 255);
+}
+
+div[data-editable="webformNew"] [data-item-what="phone"] input[type="text"],
+div[data-editable="webinarNew"] [data-item-what="phone"] input[type="text"] {
+	border: none;
+}
+
+div[data-editable="webformNew"] .directional::after {
+	border-color: rgb(48, 48, 48) transparent transparent transparent;
+}
+
+[data-editable="webformNewItem"].opened .directional::after {
+	border-color: transparent transparent rgb(48, 48, 48) transparent;
+}
+
+.custom-form [data-editable="webformNewItem"],
+.custom-form [data-editable="webformNewButton"],
+.custom-form [data-editable="webformNewItem"] [data-editable-item="label"],
+.custom-form [data-editable="webformNewItem"] [data-editable-item="field"] {
+	height: 70px;
+}
+
+.custom-form [data-editable="webformNewItem"] {
+	width: 475px;
+}
+
+
+/* [ Button container ] */
+
+div[data-editable="button"],
+div[data-editable="webinarButton"],
+div[data-editable="webform"] button,
+div[data-editable="webformNewButton"] button {
+	border-radius: 12px;
+	background-color: rgb(247, 57, 5);
+	box-shadow: rgb(194, 12, 4) 0px 5px 0px 0px;
+}
+
+div[data-editable="button"] button,
+div[data-editable="webinarButton"] button,
+div[data-editable="webform"] button,
+div[data-editable="webformNewButton"] button {
+	font-family: 'Raleway', serif;
+	color: #fff;
+	font-size: 21px;
+	font-weight: 800;
+}
+
+div[data-editable="button"].hover button,
+div[data-editable="webinarButton"].hover button,
+div[data-editable="webform"] div[data-type="submit"].hover button,
+[data-editable="webformNewButton"].hover button {
+	color: #fff;
+}
+
+/* form css */
+.navbar-nav {
+    width: 100%
+}
+
+@media(min-width:568px) {
+    .end {
+        margin-left: auto
+    }
+}
+
+@media(max-width:768px) {
+    #post {
+        width: 100%
+    }
+}
+
+#clicked {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    width: 100%;
+    background-color: #ecb21f;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px
+}
+
+#profile {
+    background-color: unset
+}
+
+#post {
+    margin: 10px;
+    padding: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: #ecb21f;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;
+    width: 50%
+}
+
+body {
+    background-color: black
+}
+
+#nav-items li a,
+#profile {
+    text-decoration: none;
+    color: rgb(224, 219, 219);
+    background-color: black
+}
+
+.comments {
+    margin-top: 5%;
+    margin-left: 20px
+}
+
+.darker {
+    border: 1px solid #ecb21f;
+    /* background-color: black; */
+    float: right;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px
+}
+
+.comment {
+    border: 1px solid rgba(16, 46, 46, 1);
+    /* background-color: rgba(16, 46, 46, 0.973); */
+    float: left;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px
+}
+
+.comment h4,
+.comment span,
+.darker h4,
+.darker span {
+    display: inline
+}
+
+.comment p,
+.comment span,
+.darker p,
+.darker span {
+    color: rgba(57, 50, 50, 0.86)
+}
+
+h1,
+h4 {
+    color: white;
+    font-weight: bold
+}
+
+label {
+    color: rgb(37, 32, 32)
+}
+
+#align-form {
+    margin-top: 20px
+}
+
+.form-group p a {
+    color: white
+}
+
+#checkbx {
+    background-color: black
+}
+
+#darker img {
+    margin-right: 15px;
+    position: static
+}
+
+.form-group input,
+.form-group textarea {
+    /* background-color: black; */
+    border: 1px solid rgba(16, 46, 46, 1);
+    border-radius: 12px
+}
+
+form {
+    border: 1px solid rgba(16, 46, 46, 1);
+    /* background-color: rgba(16, 46, 46, 0.973); */
+    border-radius: 5px;
+    padding: 20px;
+	/* margin: 0 0 16px; */
+}
+
+/* #scroll{
+    overflow: scroll;
+} */
